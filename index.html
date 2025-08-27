@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Service</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <!-- tailwind cdn  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -58,13 +59,13 @@
           <p
             class="flex items-center gap-2 bg-[#41ff6b1a] rounded-[50px] px-9 py-2"
           >
-            <span class="font-black">0</span>
+            <span id="heart-icon" class="font-black">0</span>
             <img class="w-[30px]" src="./assets/heart.png" alt="" />
           </p>
           <p
             class="flex items-center gap-2 bg-[#41ff6b1a] rounded-[50px] px-9 py-3"
           >
-            <span class="font-black">100</span>
+            <span id="coin" class="font-black">100</span>
             <img class="w-[23px]" src="./assets/coin.png" alt="" />
           </p>
           <p
@@ -105,7 +106,9 @@
                 <div class="bg-[#FFE3E2] p-3 rounded-[16px]">
                   <img class="w-[32px]" src="./assets/emergency.png" alt="" />
                 </div>
-                <p><i class="fa-regular fa-heart text-[#5C5C5C]"></i></p>
+                <p>
+                  <i class="fa-regular fa-heart text-[#5C5C5C] heart-count"></i>
+                </p>
               </div>
               <h3 class="text-xl font-bold mt-4">জাতীয় জরুরি সেবা</h3>
               <p class="text-[#5C5C5C] roboto-font">National Emergency</p>
@@ -121,7 +124,9 @@
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
-                <button class="bg-[#00A63E] text-white px-6 py-1 rounded-lg">
+                <button
+                  class="call-btn bg-[#00A63E] text-white px-6 py-1 rounded-lg"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -132,7 +137,9 @@
                 <div class="bg-[#DFEFFF] p-3 rounded-[16px]">
                   <img class="w-[32px]" src="./assets/police.png" alt="" />
                 </div>
-                <p><i class="fa-regular fa-heart text-[#5C5C5C]"></i></p>
+                <p>
+                  <i class="fa-regular fa-heart text-[#5C5C5C] heart-count"></i>
+                </p>
               </div>
               <h3 class="text-xl font-bold mt-4">পুলিশ</h3>
               <p class="text-[#5C5C5C] roboto-font">Police</p>
@@ -148,7 +155,9 @@
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
-                <button class="bg-[#00A63E] text-white px-6 py-1 rounded-lg">
+                <button
+                  class="call-btn bg-[#00A63E] text-white px-6 py-1 rounded-lg"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -163,7 +172,9 @@
                     alt=""
                   />
                 </div>
-                <p><i class="fa-regular fa-heart text-[#5C5C5C]"></i></p>
+                <p>
+                  <i class="fa-regular fa-heart text-[#5C5C5C] heart-count"></i>
+                </p>
               </div>
               <h3 class="text-2xl font-bold mt-4">ফায়ার সার্ভিস</h3>
               <p class="text-[#5C5C5C] roboto-font">Fire Service</p>
@@ -179,7 +190,9 @@
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
-                <button class="bg-[#00A63E] text-white px-6 py-1 rounded-lg">
+                <button
+                  class="call-btn bg-[#00A63E] text-white px-6 py-1 rounded-lg"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -190,7 +203,9 @@
                 <div class="bg-[#FFE3E2] p-3 rounded-[16px]">
                   <img class="w-[32px]" src="./assets/ambulance.png" alt="" />
                 </div>
-                <p><i class="fa-regular fa-heart text-[#5C5C5C]"></i></p>
+                <p>
+                  <i class="fa-regular fa-heart text-[#5C5C5C] heart-count"></i>
+                </p>
               </div>
               <h3 class="text-xl font-bold mt-4">অ্যাম্বুলেন্স</h3>
               <p class="text-[#5C5C5C] roboto-font">Ambulance</p>
@@ -206,7 +221,9 @@
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
-                <button class="bg-[#00A63E] text-white px-6 py-1 rounded-lg">
+                <button
+                  class="call-btn bg-[#00A63E] text-white px-6 py-1 rounded-lg"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -217,7 +234,9 @@
                 <div class="bg-[#FFE3E2] p-3 rounded-[16px]">
                   <img class="w-[32px]" src="./assets/emergency.png" alt="" />
                 </div>
-                <p><i class="fa-regular fa-heart text-[#5C5C5C]"></i></p>
+                <p>
+                  <i class="fa-regular fa-heart text-[#5C5C5C] heart-count"></i>
+                </p>
               </div>
               <h3 class="text-xl font-bold mt-4">নারী ও শিশু সহায়তা</h3>
               <p class="text-[#5C5C5C] roboto-font">Women & Child Helpline</p>
@@ -233,7 +252,9 @@
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
-                <button class="bg-[#00A63E] text-white px-6 py-1 rounded-lg">
+                <button
+                  class="call-btn bg-[#00A63E] text-white px-6 py-1 rounded-lg"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -244,7 +265,9 @@
                 <div class="bg-[#FFE3E2] p-3 rounded-[16px]">
                   <img class="w-[32px]" src="./assets/emergency.png" alt="" />
                 </div>
-                <p><i class="fa-regular fa-heart text-[#5C5C5C]"></i></p>
+                <p>
+                  <i class="fa-regular fa-heart text-[#5C5C5C] heart-count"></i>
+                </p>
               </div>
               <h3 class="text-xl font-bold mt-4">দুদক</h3>
               <p class="text-[#5C5C5C] roboto-font">Anti-Corruption</p>
@@ -260,7 +283,9 @@
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
-                <button class="bg-[#00A63E] text-white px-6 py-1 rounded-lg">
+                <button
+                  class="call-btn bg-[#00A63E] text-white px-6 py-1 rounded-lg"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -271,7 +296,9 @@
                 <div class="bg-[#FFE3E2] p-3 rounded-[16px]">
                   <img class="w-[32px]" src="./assets/emergency.png" alt="" />
                 </div>
-                <p><i class="fa-regular fa-heart text-[#5C5C5C]"></i></p>
+                <p>
+                  <i class="fa-regular fa-heart text-[#5C5C5C] heart-count"></i>
+                </p>
               </div>
               <h3 class="text-xl font-bold mt-4">বিদ্যুৎ বিভ্রাট</h3>
               <p class="text-[#5C5C5C] roboto-font">Electricity Outage</p>
@@ -287,7 +314,9 @@
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
-                <button class="bg-[#00A63E] text-white px-6 py-1 rounded-lg">
+                <button
+                  class="call-btn bg-[#00A63E] text-white px-6 py-1 rounded-lg"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -298,7 +327,9 @@
                 <div class="bg-[#FFE3E2] p-3 rounded-[16px]">
                   <img class="w-[32px]" src="./assets/brac.png" alt="" />
                 </div>
-                <p><i class="fa-regular fa-heart text-[#5C5C5C]"></i></p>
+                <p>
+                  <i class="fa-regular fa-heart text-[#5C5C5C] heart-count"></i>
+                </p>
               </div>
               <h3 class="text-xl font-bold mt-4">ব্র্যাক</h3>
               <p class="text-[#5C5C5C] roboto-font">Brac</p>
@@ -314,7 +345,9 @@
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
-                <button class="bg-[#00A63E] text-white px-6 py-1 rounded-lg">
+                <button
+                  class="call-btn bg-[#00A63E] text-white px-6 py-1 rounded-lg"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -329,7 +362,9 @@
                     alt=""
                   />
                 </div>
-                <p><i class="fa-regular fa-heart text-[#5C5C5C]"></i></p>
+                <p>
+                  <i class="fa-regular fa-heart text-[#5C5C5C] heart-count"></i>
+                </p>
               </div>
               <h3 class="text-xl font-bold mt-4">বাংলাদেশ রেলওয়ে</h3>
               <p class="text-[#5C5C5C] roboto-font">Bangladesh Railway</p>
@@ -345,7 +380,9 @@
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
-                <button class="bg-[#00A63E] text-white px-6 py-1 rounded-lg">
+                <button
+                  class="call-btn bg-[#00A63E] text-white px-6 py-1 rounded-lg"
+                >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
@@ -362,24 +399,16 @@
               Call History
             </h3>
             <button
+              id="clear-btn"
               class="flex items-center gap-2 bg-[#00A63E] rounded-[50px] px-9 py-3 text-white font-semibold"
             >
               Clear
             </button>
           </div>
-          <div id="call-history">
-            <div
-              class="flex justify-between items-center bg-[#FAFAFA] rounded-lg p-4 my-4"
-            >
-              <div>
-                <h3>জাতীয় জরুরি সেবা</h3>
-                <p class="text-[#5C5C5C]">999</p>
-              </div>
-              <p>11:36:58 AM</p>
-            </div>
-          </div>
+          <div id="call-history"></div>
         </div>
       </div>
     </main>
+    <script src="./script/script.js"></script>
   </body>
 </html>
