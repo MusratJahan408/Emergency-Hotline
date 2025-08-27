@@ -54,13 +54,26 @@ for (const btn of callBtn) {
       return alert(
         "আপনার পর্যাপ্ত কয়েন নেই । কল করতে কমপক্ষে 20 কয়েন লাগবে ।"
       );
-    } else {
-      setElement("coin", getCoins);
-      return alert(`Calling ${name} Service ${number}...`);
     }
+    setElement("coin", getCoins);
+    alert(`Calling ${name} Service ${number}...`);
   });
 }
 
+// call history
 document.getElementById("clear-btn").addEventListener("click", function () {
   document.getElementById("call-history").innerText = "";
 });
+
+// copy button
+const copyBtns = document.getElementsByClassName("copy-btn");
+for (const btns of copyBtns) {
+  btns.addEventListener("click", function () {
+    const number = btns.parentNode.parentNode.children[3].innerText;
+    let copyCount = getElement("copy-count");
+    copyCount++;
+    setElement("copy-count", copyCount);
+    navigator.clipboard.writeText(number);
+    return alert(`নম্বর কপি হয়েছে:${number}`);
+  });
+}
