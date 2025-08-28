@@ -20,12 +20,12 @@ createElement() দিয়ে নতুন element তৈরি করব । 
 
 যেমনঃ
 
-<div>
+<!-- <div>
 <h1>Event Bubbling Parent</h1>
 <div>
 <button id='add-btn'>Add Me</button>
 </div>
-</div>
+</div> -->
 
 <script>
     const btn = document.getElementById("add-btn");
