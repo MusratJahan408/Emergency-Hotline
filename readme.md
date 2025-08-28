@@ -20,21 +20,9 @@ createElement() দিয়ে নতুন element তৈরি করব । 
 
 যেমনঃ
 
-<!-- <div>
-<h1>Event Bubbling Parent</h1>
-<div>
-<button id='add-btn'>Add Me</button>
-</div>
-</div> -->
+একটা button আছে যা একটি ছোট div এর মধ্যে আছে, আর সেই div আবার বড় একটি parent div এর মধ্যে। যখন button ক্লিক করা হয়, তখন click event প্রথমে button এর ওপর ঘটে, তারপর ধীরে ধীরে parent div এ চলে যায়। এই প্রক্রিয়াকে Event Bubbling বলে।
 
-<script>
-    const btn = document.getElementById("add-btn");
-      btn.addEventListener("click", function () {
-        console.log(btn.parentNode.parentNode);
-      });
-</script>
-
-button এ ক্লিক করলে, প্রথমে button-এর listener, তারপর সেই button-এর parent, তারপর parent ।এইভাবে ধাপে ধাপে উপরে উঠে।
+উদাহরণে ঃ button এ ক্লিক করলে, প্রথমে button-এর listener, তারপর সেই button-এর parent, তারপর parent ।এইভাবে ধাপে ধাপে উপরে উঠে।
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 
