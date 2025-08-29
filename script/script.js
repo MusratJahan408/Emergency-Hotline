@@ -36,7 +36,7 @@ for (const btn of callBtn) {
     const div = document.createElement("div");
     div.innerHTML = `
             <div
-              class="flex justify-between items-center bg-[#FAFAFA] rounded-lg p-4 my-4"
+              class="flex justify-between items-center bg-[#FAFAFA] rounded-lg shadow p-4 my-4"
             >
               <div>
                 <h3>${serviceTitle}</h3>
